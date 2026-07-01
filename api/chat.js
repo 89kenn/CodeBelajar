@@ -45,9 +45,11 @@ export default async function handler(req, res) {
 
     console.log(JSON.stringify(data, null, 2));
 
-    const answer =
       data?.candidates?.[0]?.content?.parts?.[0]?.text ||
-      "Maaf, CodeAI belum mendapat jawaban dari Gemini.";
+  "Maaf, CodeAI belum mendapat jawaban dari Gemini.";const answer =
+  data?.candidates?.[0]?.content?.parts?.[0]?.text ||
+  data?.error?.message ||
+  JSON.stringify(data);
 
     return res.status(200).json({ answer });
   } catch (error) {
