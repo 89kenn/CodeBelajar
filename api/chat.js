@@ -43,6 +43,8 @@ export default async function handler(req, res) {
 
     const data = await response.json();
 
+    console.log(JSON.stringify(data, null, 2));
+
     const answer =
       data?.candidates?.[0]?.content?.parts?.[0]?.text ||
       "Maaf, CodeAI belum mendapat jawaban dari Gemini.";
