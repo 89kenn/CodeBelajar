@@ -104,3 +104,18 @@ width:100%;
 margin-left:0;
 }
 }
+.chat-input{
+margin-bottom:16px;
+}
+
+.ai-container > a button{
+margin-top:16px;
+}
+
+#sendPrompt{
+margin-bottom:0;
+}
+
+.chat-input textarea{
+margin-bottom:0;
+}
