@@ -1,0 +1,70 @@
+.CodeMirror{
+height:250px;
+border-radius:16px;
+font-size:15px;
+border:1px solid #334155;
+margin-top:10px;
+overflow:hidden;
+}
+
+iframe{
+width:100%;
+height:320px;
+border:none;
+border-radius:16px;
+background:white;
+}
+
+.playground-toolbar{
+display:grid;
+grid-template-columns:1fr 1fr 1fr 52px;
+gap:10px;
+margin:18px 0;
+}
+
+.playground-toolbar button{
+margin:0;
+padding:13px 10px;
+font-size:14px;
+}
+
+.playground-menu{
+display:none;
+background:rgba(15,23,42,.96);
+border:1px solid rgba(255,255,255,.12);
+border-radius:18px;
+padding:14px;
+margin-bottom:18px;
+box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+.playground-menu.show{
+display:block;
+}
+
+.playground-menu button{
+margin:0 0 12px 0;
+}
+
+.playground-menu button:last-child{
+margin-bottom:0;
+}
+
+@media(max-width:480px){
+.CodeMirror{
+height:220px;
+font-size:14px;
+}
+
+iframe{
+height:260px;
+}
+
+.playground-toolbar{
+grid-template-columns:1fr 1fr;
+}
+
+.playground-toolbar button{
+font-size:13px;
+}
+}

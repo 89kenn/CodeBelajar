@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Playground Pro</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/playground.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/dracula.min.css">
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>💻 Playground Pro</h1>
+
+<p>
+Editor coding profesional untuk HTML, CSS, dan JavaScript.
+</p>
+
+</div>
+
+<div class="playground-toolbar">
+
+<button id="runCode">▶ Run</button>
+
+<button id="saveProject">💾 Save</button>
+
+<button id="loadProject">📂 Open</button>
+
+<button id="menuToggle">☰ Menu</button>
+
+</div>
+
+<div class="playground-menu" id="playgroundMenu">
+
+<button id="resetCode">
+🔄 Reset Editor
+</button>
+
+<button id="downloadHTML">
+📥 Download HTML
+</button>
+
+<button id="deleteProject">
+🗑️ Hapus Project
+</button>
+
+<button id="fullscreenPreview">
+📱 Fullscreen Preview
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🟧 HTML</h2>
+
+<textarea id="htmlCode"></textarea>
+
+</div>
+
+<div class="card">
+
+<h2>🎨 CSS</h2>
+
+<textarea id="cssCode"></textarea>
+
+</div>
+
+<div class="card">
+
+<h2>⚡ JavaScript</h2>
+
+<textarea id="jsCode"></textarea>
+
+</div>
+
+<div class="card">
+
+<h2>📱 Live Preview</h2>
+
+<iframe id="preview"></iframe>
+
+</div>
+
+<div class="card">
+
+<h2>🧪 Console</h2>
+
+<div id="consoleOutput">
+
+<p>
+Console output akan muncul di sini.
+</p>
+
+</div>
+
+</div>
+
+<a href="../index.html">
+
+<button>
+⬅ Kembali
+</button>
+
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/xml/xml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/css/css.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
+
+<script src="../js/playground.js?v=4"></script>
+
+</body>
+</html>

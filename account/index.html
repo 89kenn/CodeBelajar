@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Account</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/account.css">
+
+</head>
+
+<body>
+
+<div class="profile-card">
+
+<div class="profile-header">
+
+<div class="profile-photo" id="profilePhoto">
+👤
+</div>
+
+<h1 id="profileName">
+Kenn
+</h1>
+
+<p id="profileTitle">
+Beginner Coder
+</p>
+
+</div>
+
+<div class="profile-stats">
+
+<div class="stat-box">
+<h2 id="profileLevel">1</h2>
+<p>Level</p>
+</div>
+
+<div class="stat-box">
+<h2 id="profileXP">0</h2>
+<p>XP</p>
+</div>
+
+<div class="stat-box">
+<h2 id="profileBadge">0</h2>
+<p>Badge</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>👤 Edit Profil</h2>
+
+<input
+type="text"
+id="username"
+placeholder="Masukkan Username">
+
+<textarea
+id="bio"
+placeholder="Tulis Bio"></textarea>
+
+<input
+type="file"
+id="uploadPhoto"
+accept="image/*">
+
+<button id="saveProfile">
+💾 Simpan Profil
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📊 Progress</h2>
+
+<progress
+id="xpBar"
+value="0"
+max="100">
+</progress>
+
+<p id="xpText">
+0 / 100 XP
+</p>
+
+</div>
+
+<a href="../profile/index.html">
+
+<button>
+
+⬅ Kembali
+
+</button>
+
+</a>
+
+</div>
+
+<script src="../js/account.js"></script>
+
+</body>
+</html>
